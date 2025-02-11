@@ -1,8 +1,13 @@
 # Ignore virtual environment
 venv/
 
-# Ignore Rasa trained models
+# Rasa temporary files
+.rasa/
 models/
+__pycache__/
+*.db
+.cache/
+.logs/
 
 # Ignore compiled Python files
 __pycache__/

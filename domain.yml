@@ -1,0 +1,98 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - ask_scholarship_overview
+  - ask_eligibility
+  - ask_application_process
+  - ask_deadline
+  - ask_language_requirements
+  - ask_required_documents
+  - ask_selection_process
+  - ask_for_master_degree
+  - ask_for_phd
+  - ask_for_internship
+  - ask_for_rural_applicants
+  - ask_where_to_apply
+  - ask_financial_support
+  - ask_interview_tips
+  - ask_universities
+
+responses:
+  utter_default:
+  - text: "I'm sorry, but I didn't understand that. Can you rephrase your question?"
+
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_ask_scholarship_overview:
+  - text: "The Bolashak scholarship is a program for Kazakhstani citizens to study abroad fully funded by the government."
+  - text: "Bolashak is an international scholarship for talented individuals to study at top foreign universities."
+
+  utter_ask_eligibility:
+  - text: "To apply for Bolashak, you must be a Kazakhstani citizen with a strong academic record and meet language proficiency requirements."
+
+  utter_ask_application_process:
+  - text: "You need to submit an online application through eGov, provide necessary documents, and pass a competitive selection process."
+
+  utter_ask_deadline:
+  - text: "The application deadline varies each year. Please check the official website for the latest updates."
+
+  utter_ask_language_requirements:
+  - text: "Yes, applicants must pass the KAZTEST with at least a B1 level and meet foreign language proficiency requirements."
+
+  utter_ask_required_documents:
+  - text: "You need to submit an ID, passport, educational certificates, language test results, and other supporting documents."
+
+  utter_ask_selection_process:
+  - text: "The selection process includes comprehensive testing, a personal interview, and approval by the Republican Commission."
+
+  utter_ask_financial_support:
+  - text: "Bolashak covers tuition fees, living expenses, travel costs, and health insurance."
+
+  utter_ask_universities:
+  - text: "Applicants must receive an unconditional offer from universities listed in the official Bolashak recommended universities list."
+
+  utter_ask_for_master_degree:
+  - text: "Yes, you can apply for a master's degree if you meet the eligibility criteria, including academic performance and work experience."
+
+  utter_ask_for_phd:
+  - text: "PhD applicants need an unconditional offer from an eligible university, language proficiency, and research experience."
+
+  utter_ask_for_internship:
+  - text: "Bolashak offers internships for professionals in various fields such as engineering, medicine, education, and public service."
+
+  utter_ask_for_rural_applicants:
+  - text: "Applicants from rural areas must have lived and worked in rural regions for at least two years and meet academic criteria."
+
+  utter_ask_interview_tips:
+  - text: "Prepare by reviewing your application, practicing common questions, and demonstrating your knowledge about the program."
+
+  utter_ask_where_to_apply:
+  - text: "Applications are submitted online through the e-Government portal at [www.egov.kz](https://www.egov.kz)."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

@@ -1,0 +1,111 @@
+version: "3.1"
+
+nlu:
+- intent: ask_scholarship_overview
+  examples: |
+    - What is the Bolashak scholarship?
+    - Can you explain the Bolashak program?
+    - What are the benefits of Bolashak?
+    - Tell me about the Bolashak scholarship.
+
+- intent: ask_eligibility
+  examples: |
+    - Who is eligible for the Bolashak scholarship?
+    - What are the requirements for Bolashak?
+    - Can international students apply?
+    - What are the academic requirements?
+    - What GPA do I need to apply?
+
+- intent: ask_application_process
+  examples: |
+    - How do I apply for the Bolashak scholarship?
+    - What are the steps to apply?
+    - How can I submit my documents?
+    - Where do I apply for the Bolashak scholarship?
+
+- intent: ask_deadline
+  examples: |
+    - When is the application deadline?
+    - What is the last date to submit the application?
+    - Can I apply after the deadline?
+    - How much time do I have to apply?
+
+- intent: ask_language_requirements
+  examples: |
+    - Do I need to know English for Bolashak?
+    - What are the language requirements?
+    - Do I need to take the KAZTEST?
+    - What is the minimum score for KAZTEST?
+    - What foreign language test scores are required?
+
+- intent: ask_required_documents
+  examples: |
+    - What documents are needed to apply?
+    - Can you provide a list of required documents?
+    - What should I include in my application?
+    - Do I need a passport to apply?
+
+- intent: ask_selection_process
+  examples: |
+    - How does the selection process work?
+    - What are the stages of selection?
+    - What tests do I need to take?
+    - Is there an interview for Bolashak?
+    - How do I prepare for the selection process?
+
+- intent: ask_financial_support
+  examples: |
+    - Does the Bolashak scholarship cover tuition fees?
+    - How much funding does Bolashak provide?
+    - Do I need to pay for my education?
+    - What expenses are covered?
+
+- intent: ask_universities
+  examples: |
+    - Which universities are included in the program?
+    - Can I study at any university?
+    - Do I need an offer from a recommended university?
+    - How do I know if my university is eligible?
+
+- intent: ask_for_master_degree
+  examples: |
+    - Can I apply for a master’s degree with Bolashak?
+    - What are the requirements for master's applicants?
+    - Do I need work experience for a master’s degree?
+    - What GPA is required for a master's program?
+
+- intent: ask_for_phd
+  examples: |
+    - Can I apply for a PhD with Bolashak?
+    - What are the requirements for doctoral applicants?
+    - Do I need research experience?
+    - What universities accept PhD applicants?
+
+- intent: ask_for_internship
+  examples: |
+    - Does Bolashak offer internships?
+    - Who can apply for the internship program?
+    - How do I apply for an internship?
+    - What are the eligibility criteria for internships?
+
+- intent: ask_for_rural_applicants
+  examples: |
+    - Are there special conditions for rural applicants?
+    - What are the benefits for rural area applicants?
+    - Do I need work experience in rural areas?
+    - How do rural applicants apply?
+
+- intent: ask_interview_tips
+  examples: |
+    - How can I prepare for the interview?
+    - What questions will be asked in the interview?
+    - Do I need to speak in English for the interview?
+    - Any tips for passing the interview?
+
+- intent: ask_where_to_apply
+  examples: |
+    - Where do I submit my application?
+    - Is there an online portal for applications?
+    - Can I apply through eGov?
+    - What website should I use to apply?
+

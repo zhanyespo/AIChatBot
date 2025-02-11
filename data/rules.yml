@@ -1,0 +1,73 @@
+version: "3.1"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: Greet the user
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: Answer questions about Bolashak scholarship
+  steps:
+  - intent: ask_scholarship_overview
+  - action: utter_ask_scholarship_overview
+
+- rule: Answer eligibility questions
+  steps:
+  - intent: ask_eligibility
+  - action: utter_ask_eligibility
+
+- rule: Answer document requirements
+  steps:
+  - intent: ask_required_documents
+  - action: utter_ask_required_documents
+
+- rule: Answer application process questions
+  steps:
+  - intent: ask_application_process
+  - action: utter_ask_application_process
+
+- rule: Answer deadline questions
+  steps:
+  - intent: ask_deadline
+  - action: utter_ask_deadline
+
+- rule: Handle unknown questions
+  steps:
+  - intent: nlu_fallback
+  - action: utter_default
+
+- rule: Answer questions about Master's Degree
+  steps:
+  - intent: ask_for_master_degree
+  - action: utter_ask_for_master_degree
+
+- rule: Answer questions about PhD
+  steps:
+  - intent: ask_for_phd
+  - action: utter_ask_for_phd
+
+- rule: Answer questions about Internships
+  steps:
+  - intent: ask_for_internship
+  - action: utter_ask_for_internship
+
+- rule: Answer questions about Rural Applicants
+  steps:
+  - intent: ask_for_rural_applicants
+  - action: utter_ask_for_rural_applicants
+
+- rule: Answer questions about Selection Process
+  steps:
+  - intent: ask_selection_process
+  - action: utter_ask_selection_process

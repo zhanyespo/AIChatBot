@@ -1,0 +1,103 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: User asks about application process
+  steps:
+  - intent: ask_application_process
+  - action: utter_ask_application_process
+  - intent: ask_required_documents
+  - action: utter_ask_required_documents
+  - intent: ask_deadline
+  - action: utter_ask_deadline
+
+- story: User asks about eligibility
+  steps:
+  - intent: ask_eligibility
+  - action: utter_ask_eligibility
+  - intent: ask_language_requirements
+  - action: utter_ask_language_requirements
+
+- story: User asks about scholarship benefits
+  steps:
+  - intent: ask_financial_support
+  - action: utter_ask_financial_support
+  - intent: ask_universities
+  - action: utter_ask_universities
+
+- story: User asks about interview preparation
+  steps:
+  - intent: ask_interview_tips
+  - action: utter_ask_interview_tips
+  - intent: ask_where_to_apply
+  - action: utter_ask_where_to_apply
+
+- story: User asks about Master’s Degree
+  steps:
+  - intent: ask_for_master_degree
+  - action: utter_ask_for_master_degree
+  - intent: ask_required_documents
+  - action: utter_ask_required_documents
+  - intent: ask_application_process
+  - action: utter_ask_application_process
+
+- story: User asks about PhD program
+  steps:
+  - intent: ask_for_phd
+  - action: utter_ask_for_phd
+  - intent: ask_required_documents
+  - action: utter_ask_required_documents
+  - intent: ask_language_requirements
+  - action: utter_ask_language_requirements
+
+- story: User asks about Internship program
+  steps:
+  - intent: ask_for_internship
+  - action: utter_ask_for_internship
+  - intent: ask_eligibility
+  - action: utter_ask_eligibility
+  - intent: ask_application_process
+  - action: utter_ask_application_process
+
+- story: User asks about Rural Applicant requirements
+  steps:
+  - intent: ask_for_rural_applicants
+  - action: utter_ask_for_rural_applicants
+  - intent: ask_required_documents
+  - action: utter_ask_required_documents
+
+- story: User asks about Selection Process
+  steps:
+  - intent: ask_selection_process
+  - action: utter_ask_selection_process
+  - intent: ask_interview_tips
+  - action: utter_ask_interview_tips
+  - intent: ask_where_to_apply
+  - action: utter_ask_where_to_apply
